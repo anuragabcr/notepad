@@ -4,6 +4,7 @@ import Card from "@/components/card";
 import Login from "@/components/login";
 import Alert from "@/components/alert";
 import { useEffect, useState } from "react";
+import AdBanner from "@/components/AdBanner";
 
 export default function Home() {
   const [notes, setNotes] = useState([]);
@@ -209,6 +210,7 @@ export default function Home() {
       </nav>
 
       {/* Navbar End */}
+      <AdBanner />
       {/* Row Col to manage card layout Start */}
       <div className="row" style={{ padding: 10 }}>
         {/* New note card */}
